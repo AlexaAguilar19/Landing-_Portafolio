@@ -1,0 +1,340 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*********************cabecera********************************************/
+nav{
+    position: fixed;
+    background-color:#fff;
+    height: 70px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+   margin-bottom: 20px;
+}
+
+label.logo{
+    color: #088A68;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #088A68;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    background: #E6E6E6;
+    transition: .5s;
+}
+
+.btnck{
+    font-size: 30px;
+    color: #088A68;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+.btnck > i{
+    font-size: 35px;
+}
+
+#btn{
+    display: none;
+}
+
+/**********************contenido*************************************************/
+.container {
+    width: 75%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#perfil{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+#profile{
+    width: 230px;
+    height: 220px;
+    margin: 10px;
+    margin-top: 70px;
+
+}
+
+#profile img{
+       width: 100%;
+       height: 100%;
+       border-radius: 50%;
+}
+
+#resent{
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+    margin-top: 100px;
+   
+}
+
+#resent h3,#proyectos h2,.skill h2,#contacto h2{
+ color: #088A68;
+}
+
+/***************Slider proyectos************************************************/
+
+#proyectos{
+    margin-bottom: 150px;
+}
+
+.slider-frame{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    animation: cambio 20s infinite alternate ease-in-out;
+    width: 400%;
+}
+
+.slider-frame li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider-frame img{
+    width:  100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/*************section Skills********************************/
+#skills{
+    margin-bottom: 150px;
+}
+
+.skill{
+    width: 100%;
+    margin: 60px auto;
+    color: #088A68;
+    padding: 20px;
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: #088A68;
+}
+
+.html{
+    width: 90%;
+    animation: html 3s infinite;
+}
+
+.boots{
+    width: 40%;
+    animation: boots 3s infinite;
+}
+
+.java{
+    width: 50%;
+    animation: java 3s infinite;
+}
+
+.db{
+    width: 45%;
+    animation: db 3s infinite;
+}
+
+.net{
+    width: 40%;
+    animation: net 3s infinite;
+}
+
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes boots{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 40%;
+    }
+}
+
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
+
+@keyframes db{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 45%;
+    }
+}
+
+
+@keyframes net{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 40%;
+    }
+}
+
+/***cntacto**********************************************/
+
+#enlace {
+    margin-top: 150px;
+    width: 350px;
+    height: 300px;
+}
+
+#enlace a{
+    font-size: 20px;
+    color: #088A68;
+    padding: 15px 20px;
+    border: 2px #088A68 solid;
+    border-radius: 20px;
+}
+
+#enlace a:hover{
+  background:#088A68 ;
+  color: #fff;
+}
+
+/*******************************************************************************/
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px ;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+     .btnck{
+        display: block;
+     }
+
+     ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition:all .5s;
+     }
+
+     nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+     }
+
+     nav ul li a{
+        font-size: 20px;
+     }
+
+     a:hover, a.active{
+        background: none;
+        color:#E6E6E6;
+     }
+
+     #btn:checked ~ ul{
+        left: 0;
+     }
+}
+
